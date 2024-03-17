@@ -1,6 +1,10 @@
 const {faker} = require("@faker-js/faker");
 
 class BasketPage {
+  verifyBasketPage(){
+    cy.contains('h1','Your Basket').should('be.visible');
+  };
+
   verifySelectedItemsInBasket() {
     cy.fixture("productQty.json").then((data) => {
       for (let key in data) {
@@ -71,6 +75,11 @@ class BasketPage {
           expect(TotalCalprice).to.equal(lblTotalPrice);
         });
       });
+  }
+
+  verifyCheckoutSuccessful(){
+    cy.get('.invalid-feedback').should('not.be.visible');
+    cy.url().should('equal','https://sweetshop.netlify.app/basket?');
   }
 
   calculateTotalValue() {

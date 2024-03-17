@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="18.137" tests="4" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-03-17T10:06:46" tests="0" file="cypress\e2e\specs\sweetshop_test.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Verify Sweetshop UI Automation suite" timestamp="2024-03-17T10:06:46" tests="4" time="18.133" failures="1">
+    <testcase name="Verify Sweetshop UI Automation suite verify All the selected items are present in basket" time="3.774" classname="verify All the selected items are present in basket">
+    </testcase>
+    <testcase name="Verify Sweetshop UI Automation suite verify total price in GBP is correct" time="1.707" classname="verify total price in GBP is correct">
+    </testcase>
+    <testcase name="Verify Sweetshop UI Automation suite verify the total priceby changing delivery type to Standard Shipping" time="2.269" classname="verify the total priceby changing delivery type to Standard Shipping">
+      <failure message="expected 7.49 to equal NaN" type="AssertionError"><![CDATA[AssertionError: expected 7.49 to equal NaN
+    at Context.eval (webpack://cypress_automation/./cypress/e2e/page/basketPage.js:61:41)
+
+      + expected - actual:  failed to generate Mocha diff
+]]></failure>
+    </testcase>
+    <testcase name="Verify Sweetshop UI Automation suite Verify User able to Checkout" time="7.264" classname="Verify User able to Checkout">
+    </testcase>
+  </testsuite>
+</testsuites>
