@@ -3,7 +3,7 @@ const { parse } = require("csv-parse");
 
 const breedNames = [];
 
-fs.createReadStream("./cypress/downloads/2017.csv")
+fs.createReadStream("./cypress/data/2017.csv")
   .pipe(
     parse({
       delimiter: ",",
