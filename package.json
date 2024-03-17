@@ -10,7 +10,8 @@
     "lint:js:fix": "npm run lint:js -- --fix",
     "lint": "eslint --fix \"**/cypress/e2e/**/*.js\"",
     "format:check": "prettier --check .",
-    "format:fix": "prettier . --write ."
+    "format:fix": "prettier . --write .",
+    "format:csv": "node scripts/csvDataFormatting"
   },
   "author": "Subhasis Biswal",
   "license": "ISC",
@@ -26,6 +27,7 @@
   },
   "dependencies": {
     "@faker-js/faker": "8.4.1",
+    "csv-parse": "^5.5.5",
     "cypress-multi-reporters": "1.6.4",
     "junit-report-merger": "6.0.3",
     "mocha-junit-reporter": "2.2.1",
